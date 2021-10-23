@@ -8,13 +8,13 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from admin_tasks.models import AdminTask
-from integrations.models import AccessToken
+from admin.admin_tasks.models import AdminTask
+from admin.integrations.models import AccessToken
 from misc.serializers import ContentSerializer
 # from fuzzywuzzy import process
 from organization.models import Organization
-from resources.models import Category, Chapter, CourseAnswer
-from sequences.models import Sequence
+from admin.resources.models import Category, Chapter, CourseAnswer
+from admin.sequences.models import Sequence
 from users.models import NewHireWelcomeMessage, ResourceUser, ToDoUser, User
 
 from .slack import Slack
